@@ -7,6 +7,54 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://player.vimeo.com">
+    <link rel="preconnect" href="https://i.vimeocdn.com">
+    <link rel="preconnect" href="https://f.vimeocdn.com">
+    <style>
+    body, .black {
+      background-color: black;
+    }
+
+    .textOutline {
+          webkit-text-stroke: red;
+          -webkit-text-stroke-width: medium;
+      }
+    .container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+    }
+    .box{
+        width: 50%;
+        height: 100%;            
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.8;  /* for demo purpose  */
+    }
+    .stack-top{
+        z-index: 9;
+        margin: 20px; /* for demo purpose  */
+    }
+
+      h1 {
+        color: white;
+        text-align: left;
+        font-size: 30vw;
+      }
+
+      p {
+        font-family: verdana;
+        color: black;
+        font-size: 20px;
+      }
+
+      .highlighter {background-color:yellow;line-height:2}
+
+
+    </style>
+
 
     <title>NICE</title>
 	<script src="https://player.vimeo.com/api/player.js"></script>
@@ -14,24 +62,23 @@
   <script type="application/javascript"></script>
   </head>
   <body>
-<div style="padding:56.25% 0 0 0;position:relative;">
 
-	<iframe src="https://player.vimeo.com/video/720134599?background=1?controls=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
-></iframe>
-
-<!-- 	<iframe src="https://player.vimeo.com/video/720134599?h=0b94426c52&amp;controls=0&amp;title=0&amp;sidedock=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title=""></iframe>
- -->
+  <div class="box stack-top">
+     <h1 class ="textOutline"> NICE</h1>
+     <p> <span class= "highlighter"> The project A Neuroscientific Investigation of Crowdedness and Environmental typology, or simply NICE, is based at the Future Cities Laboratory and the Clinical Brain Lab. </span></p>
 </div>
 
+    <div class="black">
+      <iframe src="https://player.vimeo.com/video/720134599?background=1?controls=0" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          
+        </iframe>
+        
+
+    </div>
 
 
-<!-- 
- <iframe src="https://player.vimeo.com/video/675454512?h=4b788d7c09" style="border:none; height:100%;width:100%;" title="description"></iframe>   
- -->
-   <!-- <video width="320" height="240" controls>
-	  <source src="https://player.vimeo.com/video/675454512?h=4b788d7c09" type="video/mp4">
-	Your browser does not support the video tag.
-	</video>  -->
+
+   
 
   </body>
 </html>
